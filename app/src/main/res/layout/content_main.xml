@@ -98,7 +98,8 @@
         android:layout_height="wrap_content"
         android:text="Create Account"
         tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="459dp" />
+        tools:layout_editor_absoluteY="459dp"
+        android:onClick="createAccount"/>
 
     <TextView
         android:id="@+id/disclaimer"
