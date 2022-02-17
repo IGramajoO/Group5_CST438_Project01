@@ -85,16 +85,13 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean verifyAccountLogin(String name, String pass){
         User user = userDao.getUserByUsername(name);
-        Log.i("WTF", name);
 
         user = userDao.getUserByUsername(name);
         if (user == null){
-            Log.i("WTF", "USER NULL");
             Toast.makeText(this, name + " not found", Toast.LENGTH_SHORT).show();
             return false;
         }
         else if(!user.getPass().equals(pass)){
-            Log.i("WTF", "PASS WRONG");
             Toast.makeText(this, "Incorrect account name or password", Toast.LENGTH_SHORT).show();
             return false;
         }
